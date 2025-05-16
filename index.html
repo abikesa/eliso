@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ukubona</title>
 <!-- Fallback favicon (used if browser doesn't support media queries) -->
-<link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" type="image/x-icon" />
+<link rel="icon" href="../favicon/assets/favicon-light.ico" type="image/x-icon" />
 <!-- Favicon for light mode -->
-<link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
+<link rel="icon" href="../favicon/assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
 <!-- Favicon for dark mode -->
-<link rel="icon" href="https://abikesa.github.io/favicon/assets/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="../favicon/assets/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
   <!-- Preload Logo Assets -->
-  <link rel="preload" href="https://abikesa.github.io/logos/ukubona-light.png" as="image" />
-  <link rel="preload" href="https://abikesa.github.io/logos/ukubona-dark.png" as="image" />
+  <link rel="preload" href="../logos/assets/ukubona-light.png" as="image" />
+  <link rel="preload" href="../logos/assets/ukubona-dark-transparent.png" as="image" />
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     .logo-center img {
-      background-color: transparent;`
+      background-color: transparent;
     }
     
     :root {
@@ -89,8 +89,8 @@
     }
 
     @keyframes spin-light {
-      from { transform: translate(-3px, 16px) scale(0.92) rotate(0deg); }
-      to   { transform: translate(-3px, 16px) scale(0.92) rotate(360deg); }
+      from { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+      to   { transform: translate(0px, 0px) scale(1) rotate(360deg); }
     }
 
     #logo {
@@ -213,7 +213,7 @@
 
   <div class="logo-center">
 <img
-  src="https://abikesa.github.io/logos/ukubona-light.png"
+  src="../logos/assets/ukubona-light.png"
   alt="Ukubona Logo"
   id="logo"
   loading="eager"
@@ -227,8 +227,8 @@
     const toggleBtn = document.getElementById('toggle-theme');
     const logo = document.getElementById('logo');
 
-    const LIGHT_LOGO = 'https://abikesa.github.io/logos/ukubona-light.png';
-    const DARK_LOGO  = 'https://abikesa.github.io/logos/ukubona-dark.png';
+    const LIGHT_LOGO = '../logos/assets/ukubona-light.png';
+    const DARK_LOGO  = '../logos/assets/ukubona-dark-transparent.png';
 
     function setTheme(theme) {
       html.setAttribute('data-theme', theme);
