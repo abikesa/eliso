@@ -84,7 +84,7 @@ def main(commit_message, git_remote, ghp_remote):
         "r", "stata", "bash", "xml", "data", "aperitivo", "antipasto", "primo", "secondo",
         "contorno", "insalata", "formaggio-e-frutta", "dolce", "caffe", "digestivo", "ukubona",
         "the-rug", "spjd-rebuild", "spjd-beta", "ukuvula", "tokens", "ukuvela", "index", "mywiki",
-        "einstein"
+        "einstein", "eliso", "wilde-e"
     ]
     for d in extras:
         if os.path.isdir(d):
